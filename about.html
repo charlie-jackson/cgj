@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About  |  CGJ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="about-body">
+
+    <header class="navbar">
+        <h3>Charles Jackson</h3>
+        <nav>
+            <ul class="navbar-links">
+                <li class="nav-li"><a href="index.html">Home</a></li>
+                <li class="nav-li"><a href="about.html">About</a></li>
+                <li class="nav-li"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-main">
+        <div class="about-textbox">
+            <h3>Hi, I'm Charlie 👋</h3>
+            <p>I started learning to code during the long lockdowns in 2021/22. Having really enjoyed the process I enrolled on a 6-month frontend development bootcamp course at mimo_dev (now Mimo Bootcamp).</p>
+            <p>Now it is time to further develop these skills at La Fosse Academy!</p>
+            <p>Outside of tech, I'm a keen viola player with the Cambridge Concert Orchestra, and am Musical Director for <span class="sitw">Standing in the Wings</span> - a theatre production company based in Northamptonshire and Bedfordshire.</p>
+
+        <h3 class="lie-heading">Can you spot the lie...?</h3>
+        <p class="lie-pg">Can you guess which of these statements isn't true? Select one option then click 'submit' to see!</p>
+        <form action="" id="truthLieForm">
+            <input type="radio" name ="truthlie" value="salsa" id="salsa">I used to go salsa dancing - Cuban, not LA salsa
+            <br>
+            <input type="radio" name ="truthlie" value="knitting" id="knitting">I'm really into knitting
+            <br>
+            <input type="radio" name ="truthlie" value="cooking" id="cooking">I love to cook curries from scratch - from making the base sauces and dry-roasted spice blends, to accompaniments
+            <br>
+            <button class="submit-btn" id="submit">Submit</button>
+        </form>
+    </div>
+    </section>
+
+    <script>
+
+        const submit = document.getElementById('submit');
+        const correctOption = document.getElementById('knitting');
+
+        submit.addEventListener("click", function() {
+            if (correctOption.checked) {
+                alert('Well done, this is a lie!');
+            } else {
+                alert('Sorry, this is actually true! Please try again...');
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact  |  CGJ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="contact-body">
+
+    <header class="navbar">
+        <h3>Charles Jackson</h3>
+        <nav>
+            <ul class="navbar-links">
+                <li class="nav-li"><a href="index.html">Home</a></li>
+                <li class="nav-li"><a href="about.html">About</a></li>
+                <li class="nav-li"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="contact-main">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3 class="contact-heading">Enter your details to receive regular updates!</h3>
+                <form action="" id="contactForm">
+                    <label for="">Select your Title:</label>
+                    <br>
+                    <select name="userTitle" id="userTitle">
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Lord">Lord</option>
+                    </select>
+                    <br>
+                    <label for="firstName">Enter your First Name:</label>
+                    <br>
+                    <input type="text" id="firstName" placeholder="First Name" name="firstname" required class="sign-up-input">
+                    <br>
+                    <label for="lastName">Enter your Last Name:</label>
+                    <br>
+                    <input type="text" id="lastName" placeholder="Last Name" name="lastname" required class="sign-up-input">
+                    <br>
+                    <label for="userEmail">Enter your email address here:</label>
+                    <br>
+                    <input type="email" id="userEmail" placeholder="example@useremail.com" name="email" required class="sign-up-input">
+                    <br>
+                    <p>Select your age:</p>
+                        <input type="radio" name="age" value="0-25" id="option-1" class="contact-radio-btn">
+                        <label for="option-1">0-25</label>
+                        <input type="radio" name="age" value="26-40" id="option-2" class="contact-radio-btn">
+                        <label for="option-2">26-40</label>
+                        <input type="radio" name="age" value="41-64" id="option-3" class="contact-radio-btn">
+                        <label for="option-3">41-64</label>
+                        <input type="radio" name="age" value="65+" id="option-4" class="contact-radio-btn">
+                        <label for="option-4">65+</label>
+                    <br>
+                    <label for="about-you">Tell us a little about you:</label>
+                    <br>
+                    <textarea name="about-you" id="aboutYou" cols="30" rows="5" placeholder="My favourite hobbies are..." class="sign-up-input"></textarea>
+                    <br>
+                    <button class="contact-submit">Submit!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
